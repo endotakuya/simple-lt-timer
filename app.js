@@ -6,6 +6,9 @@ const app = express()
 let index = require('./routes/index');
 var remote = require('./routes/remote');
 
+// Set Port
+app.set('port', (process.env.PORT || 8080));
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'jade')
@@ -20,6 +23,6 @@ app.use(cookieParser());
 app.get('/', index)
 app.get('/:id', remote)
 
-app.listen(8080, function () {
+app.listen(app.get('port'), function () {
   console.log('Example app listening on port 8080!')
 })
