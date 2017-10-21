@@ -1,0 +1,165 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    color: #3A4750;
+    font-family: 'Roboto', sans-serif;
+}
+
+.warpper {
+    height: 100%;
+}
+
+.drawer-nav {
+    width: 24rem;
+    background-color: #3A4750;
+    padding: 40px 20px 20px;
+    box-sizing: border-box;
+}
+.drawer--right .drawer-nav {
+    right: -24rem;
+}
+.drawer--right.drawer-open .drawer-hamburger {
+    right: 24rem;
+}
+.drawer-hamburger-icon,
+.drawer-hamburger-icon:after,
+.drawer-hamburger-icon:before {
+    background-color: #3A4750;
+}
+
+.sidebar-title {
+    font-size: 24px;
+    color: #EEE;
+    margin: 0 0 50px 0;
+}
+
+.timer-set-up,
+.timer-set-down {
+    width: 100%;
+    text-align: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+.timer-set-up button,
+.timer-set-down button {
+    display: inline-block;
+    width: 30%;
+    margin-right: 10%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    background: #FFF;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    transition: all 0.1s ease;
+}
+.timer-set-up button:last-child,
+.timer-set-down button:last-child {
+    margin-right: 0;
+}
+.timer-set-up button:hover,
+.timer-set-down button:hover {
+    background-color: #3A4750;
+    color: #FFF;
+    border: 2px solid #FFF;
+}
+.timer-set-down {
+    margin-bottom: 80px
+}    
+
+.qr-image {
+    width: 100%;
+    text-align: center;
+}
+
+.timer-set {
+    width: 100%;
+    padding: 20px 0;
+    font-size: 70px;
+    text-align: center;
+    color: #EEE;
+    letter-spacing: 6px;
+}
+.content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    text-align: center;
+    margin: 140px 0 60px 0;
+}
+
+main p.time {
+    width: 100%;
+    font-size: 28vw;
+}
+
+.botton-list {
+    width: 100%;
+    text-align: center;
+}
+.botton-list button {
+    display: inline-block;
+    width: 100px;
+    padding: 10px 15px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 2px solid #3A4750;
+    background: #FFF;
+    margin-right: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.1s ease;
+}
+.botton-list button:last-child {
+    margin-right: 0;
+}
+.botton-list button:hover {
+    background-color: #3A4750;
+    color: #FFF;
+}
+
+/* remote */
+.start-box{
+    width: 100%;
+    height: 100px;
+    background-color: #C7665F;
+    border: 4px solid #FFF;
+    border-left: 4px solid #FFF;
+    border-right: 4px solid #FFF;
+    border-bottom: 4px solid #FFF;
+    box-sizing: border-box;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30vw;
+    color: #FFF;
+}
+
+.warp-box div {
+    display: table-cell;
+    width: 50%;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30vw;
+    color: #FFF;
+}
+
+.reset-box {
+    border-left: 4px solid #FFF;
+    border-right: 2px solid #FFF;
+    background-color: #5F8CC7;
+}
+
+.clear-box {
+    border-left: 2px solid #FFF;
+    border-right: 4px solid #FFF;
+    background-color: #5FC766;
+}

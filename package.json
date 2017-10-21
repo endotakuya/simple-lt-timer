@@ -1,0 +1,36 @@
+{
+  "name": "simple-lt-timer",
+  "version": "1.0.0",
+  "description": "Simple LT Timer.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/endotakuya/simple-lt-timer.git"
+  },
+  "keywords": [
+    "timer"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/endotakuya/simple-lt-timer/issues"
+  },
+  "homepage": "https://github.com/endotakuya/simple-lt-timer#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "iscroll": "^5.2.0",
+    "jade": "^1.11.0",
+    "jquery": "^2.2.4",
+    "jquery-drawer": "^3.2.2",
+    "qr-image": "^3.2.0",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1",
+    "dotenv": "^4.0.0"
+  }
+}

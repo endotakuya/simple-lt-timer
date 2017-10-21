@@ -1,0 +1,26 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    meta(name='viewport', content='width=device-width')
+
+    title Simple LT Timer
+
+    //- css
+    link(rel='stylesheet', href='/stylesheets/reset.css')
+    link(rel='stylesheet', href='/stylesheets/layout.css')
+    link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
+
+    //- js
+    script(type='text/javascript', src='/jquery/dist/jquery.min.js')
+    script(type='text/javascript', src='https://cdn.mlkcca.com/v0.6.0/milkcocoa.js')
+    script(type='text/javascript', src='/javascripts/remote.js')
+
+  body
+    .start-box
+      i.fa.fa-play(aria-hidden='true')
+    .warp-box
+      .reset-box
+        i.fa.fa-undo(aria-hidden='true')
+      .clear-box
+        i.fa.fa-trash-o(aria-hidden='true')
