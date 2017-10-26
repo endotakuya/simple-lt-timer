@@ -64,9 +64,9 @@ function timerAction(start, reset, clear) {
 }
 
 function timerStart(obj, flag) {
+    startTime = Date.now()
     let ds = milkcocoa.dataStore('status');
     if (!flag) {
-        startTime = Date.now()
         countDown()
         obj.text('STOP')
         isRunning = true
@@ -81,11 +81,13 @@ function timerStart(obj, flag) {
 }
 
 function timerReset() {
+    $('.time').removeClass('limit')
     timeToCountdown = 5 * 60 * 1000
     init()
 }
 
 function timerClear() {
+    $('.time').removeClass('limit')
     timeToCountdown = 0
     init()
 }
@@ -102,7 +104,13 @@ function timerText(t) {
 function countDown() {
     timerId = setTimeout(function(){
         timeLeft = timeToCountdown - (Date.now() - startTime)
-        countDown()
+
+        // timeLeft < 1 min
+        if (timeLeft < 60 * 1000) {
+            $('.time').addClass('limit')
+        }
+
+        // End
         if (timeLeft < 0) {
             clearTimeout(timerId)
             timeLeft = 0;
@@ -110,7 +118,9 @@ function countDown() {
             return
         }
         $('.time').text(timerText(timeLeft))
-    }, 1000)
+
+        countDown()
+    }, 100)
 }
 
 function timerSettings() {

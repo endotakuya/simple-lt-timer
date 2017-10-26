@@ -99,6 +99,9 @@ main p.time {
     width: 100%;
     font-size: 28vw;
 }
+main p.time.limit {
+    color: #FF0000;
+}
 
 .botton-list {
     width: 100%;
