@@ -80,6 +80,13 @@ function timerStart(obj, flag) {
 function timerReset() {
     $('.time').removeClass('limit')
     timeToCountdown = 5 * 60 * 1000
+
+    // Reset後にStart状態へ戻す
+    let ds = milkcocoa.dataStore('status')
+    $('.start').text('START')
+    isRunning = false
+    ds.send({status: 'play'})
+
     init()
 }
 
