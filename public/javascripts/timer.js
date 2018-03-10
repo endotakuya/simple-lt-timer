@@ -15,7 +15,6 @@ $(document).ready(function(){
     timerAction(start, reset, clear)
     let uuid = $.cookie('uuid')
 
-    
     let getUUID
     let getType
     
@@ -39,8 +38,6 @@ $(document).ready(function(){
             }
         }
     });
-    
-
 })
 
 function init() {
